@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome page</title>
+</head>
+<body>
+<H1>Post an XML</H1>
+<form action="archimate/commit" method="POST">
+XML Input
+<textarea name="xml" rows="4" cols="50">
+Please enter your XML here
+</textarea>
+
+JSON input
+<textarea name="json" rows="4" cols="50"></textarea>
+
+<input type="submit" />
+</form>
+<hr />
+<h1>Query an XML</h1>
+<form action="archimate/query" method="POST">
+
+output model type
+<input type="radio" name="model-type" value="archimate3" checked>Archimate v3</input>
+<input type="radio" name="model-type" value="archimate">Archimate v2.1</input>
+<input type="radio" name="model-type" value="bpmn">BPMN</input>
+<input type="radio" name="model-type" value="disco">Process Mining Result</input>
+
+output format
+<input type="radio" name="output-format" value="xml">XML</input>
+<input type="radio" name="output-format" value="json" checked>JSON</input>
+
+<input type="submit" />
+</form>
+</body>
+</html>
