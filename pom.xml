@@ -41,7 +41,7 @@
 					<!-- path>/${project.build.finalName}</path -->
 					<path>/${project.artifactId}</path>
 					<update>true</update>
-					<url>http://127.0.0.1:8080/manager/text</url>
+					<url>http://192.168.2.10:8080/manager/text</url>
 					<username>iea</username>
 					<password>iea</password>
 				</configuration>
